@@ -107,9 +107,30 @@
 				clearinterval(calc('crop_anim_' + caller.name));
 			);
 		);
+	</action >
+
+	<action name="play_video" scope="local">
+		caller.play();
 	</action>
 
 	<style name="waveloading" url="loading.png" onloaded="do_crop_animation(100,100, 60);" />
+
+	<style name="logovideo"  
+		 url.html5="videoplayer_basic_source.js"
+         videourl="logo.mp4"
+		 posterurl="logoposter.jpg"
+         distorted="true"
+         scale="0.25"
+		 edge="center"
+         pausedonstart="false"
+         loop="true"
+         volume="1.0"
+         directionalsound="true"
+         range="90.0"
+         rangefalloff="1.0"
+         outofrangevolume="0.0"
+         onvideoready="play_video();"
+		/>
 	
 	<scene name="scene_building" title="building" onstart="" thumburl="panos/building.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -130,58 +151,8 @@
 		<hotspot name="building5" style="waveloading" ath="-44" atv="7" scale="0.5" />
 		<hotspot name="building6" style="waveloading" ath="-26" atv="6" scale="0.5" />
 
-		<hotspot name="screen1"
-         url.html5="videoplayer_basic_source.js"
-         url.flash="videoplayer.swf"
-         videourl="logo.mp4"
-         posterurl="videoposter.jpg"
-         ath="28.5" atv="-6"
-         distorted="true"
-         scale="0.25" 
-         rx="-5.0" 
-         ry="-30.0" 
-         rz="0.0" 
-		 edge="center"
-         pausedonstart="false"
-         loop="true"
-         volume="1.0"
-         directionalsound="true"
-         range="90.0"
-         rangefalloff="1.0"
-         outofrangevolume="0.0"
-         onvideoready=""
-         onvideoplay=""
-         onvideopaused=""
-         onvideocomplete=""
-         onerror=""
-		 playsinline="false"
-         />
-
-		 <hotspot name="screen2"
-         url.html5="videoplayer_basic_source.js"
-         url.flash="videoplayer.swf"
-         videourl="logo.mp4"
-         posterurl="videoposter.jpg"
-         ath="-29" atv="-6"
-         distorted="true"
-         scale="0.25" 
-         rx="-5.0" 
-         ry="30.0" 
-         rz="0.0" 
-         pausedonstart="false"
-         loop="true"
-         volume="1.0"
-         directionalsound="true"
-         range="90.0"
-         rangefalloff="1.0"
-         outofrangevolume="0.0"
-         onvideoready=""
-         onvideoplay=""
-         onvideopaused=""
-         onvideocomplete=""
-         onerror=""
-		 playsinline="false"
-         />
+		<hotspot name="screen1" style="logovideo" ath="28.5" atv="-6" rx="-5.0" ry="-30.0" rz="0.0"/>
+		<hotspot name="screen2" style="logovideo" ath="-29" atv="-6" rx="-5.0" ry="30.0" rz="0.0" />
 
 	</scene>
 
