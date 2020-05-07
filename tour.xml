@@ -75,7 +75,6 @@
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
-		<!-- showlog(); -->
 	</action>
 
 	<action name="show_coordinate" scope="local">
@@ -111,16 +110,10 @@
 	</action>
 
 	<style name="waveloading" url="loading.png" onloaded="do_crop_animation(100,100, 60);" />
-
-	<!-- <plugin name="video"
-			url="videoplayer_basic_source.js"
-			videourl="logo_reverse.mp4"
-			devices="panovideosupport"
-			/> -->
 	
 	<scene name="scene_building" title="building" onstart="" thumburl="panos/building.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/building.tiles/preview.jpg" />
 
@@ -189,8 +182,6 @@
          onerror=""
 		 playsinline="false"
          />
-
-		<!-- <events onclick="show_coordinate();" />  -->
 
 	</scene>
 
