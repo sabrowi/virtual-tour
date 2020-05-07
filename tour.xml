@@ -112,7 +112,11 @@
 
 	<style name="waveloading" url="loading.png" onloaded="do_crop_animation(100,100, 60);" />
 
-
+	<!-- <plugin name="video"
+			url="videoplayer_basic_source.js"
+			videourl="logo_reverse.mp4"
+			devices="panovideosupport"
+			/> -->
 	
 	<scene name="scene_building" title="building" onstart="" thumburl="panos/building.tiles/thumb.jpg" lat="" lng="" heading="">
 
@@ -126,15 +130,63 @@
 
 		<hotspot name="main_building" style="waveloading" ath="-2" atv="-3" scale="0.5" />
 
-		<hotspot name="screen1" style="waveloading" ath="-29" atv="-6" scale="0.5" />
-		<hotspot name="screen2" style="waveloading" ath="28" atv="-6" scale="0.5" />
-
 		<hotspot name="building1" style="waveloading" ath="25" atv="6" scale="0.5" />
 		<hotspot name="building2" style="waveloading" ath="40" atv="8" scale="0.5" />
 		<hotspot name="building3" style="waveloading" ath="81" atv="11" scale="0.5" />
 		<hotspot name="building4" style="waveloading" ath="-78" atv="10" scale="0.5" />
 		<hotspot name="building5" style="waveloading" ath="-44" atv="7" scale="0.5" />
 		<hotspot name="building6" style="waveloading" ath="-26" atv="6" scale="0.5" />
+
+		<hotspot name="screen1"
+         url.html5="videoplayer_basic_source.js"
+         url.flash="videoplayer.swf"
+         videourl="logovideo.mp4"
+         posterurl="videoposter.jpg"
+         ath="28.5" atv="-6"
+         distorted="true"
+         scale="0.25" 
+         rx="-5.0" 
+         ry="-30.0" 
+         rz="0.0" 
+		 edge="center"
+         pausedonstart="false"
+         loop="true"
+         volume="1.0"
+         directionalsound="true"
+         range="90.0"
+         rangefalloff="1.0"
+         outofrangevolume="0.0"
+         onvideoready=""
+         onvideoplay=""
+         onvideopaused=""
+         onvideocomplete=""
+         onerror=""
+         />
+
+		 <hotspot name="screen2"
+         url.html5="videoplayer_basic_source.js"
+         url.flash="videoplayer.swf"
+         videourl="logovideo.mp4"
+         posterurl="videoposter.jpg"
+         ath="-29" atv="-6"
+         distorted="true"
+         scale="0.25" 
+         rx="-5.0" 
+         ry="30.0" 
+         rz="0.0" 
+         pausedonstart="false"
+         loop="true"
+         volume="1.0"
+         directionalsound="true"
+         range="90.0"
+         rangefalloff="1.0"
+         outofrangevolume="0.0"
+         onvideoready=""
+         onvideoplay=""
+         onvideopaused=""
+         onvideocomplete=""
+         onerror=""
+         />
 
 		<!-- <events onclick="show_coordinate();" />  -->
 
