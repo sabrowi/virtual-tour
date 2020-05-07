@@ -114,29 +114,29 @@
 
 
 	
-	<scene name="scene_untitled2" title="untitled2" onstart="" thumburl="panos/untitled2.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_building" title="building" onstart="" thumburl="panos/building.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/untitled2.tiles/preview.jpg" />
+		<preview url="panos/building.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/untitled2.tiles/pano_%s.jpg" />
+			<cube url="panos/building.tiles/pano_%s.jpg" />
 		</image>
 
-		<hotspot name="main_building" style="waveloading" ath="0" atv="-15" />
+		<hotspot name="main_building" style="waveloading" ath="-2" atv="-3" />
 
-		<hotspot name="screen1" style="waveloading" ath="-40" atv="-12" />
-		<hotspot name="screen2" style="waveloading" ath="39" atv="-13" />
+		<hotspot name="screen1" style="waveloading" ath="-29" atv="-6" />
+		<hotspot name="screen2" style="waveloading" ath="28" atv="-6" />
 
-		<hotspot name="building1" style="waveloading" ath="44" atv="1" />
-		<hotspot name="building2" style="waveloading" ath="77" atv="0" />
-		<hotspot name="building3" style="waveloading" ath="118" atv="1" />
-		<hotspot name="building4" style="waveloading" ath="-112" atv="1" />
-		<hotspot name="building5" style="waveloading" ath="-72" atv="1" />
-		<hotspot name="building6" style="waveloading" ath="-38" atv="1" />
+		<hotspot name="building1" style="waveloading" ath="25" atv="6" />
+		<hotspot name="building2" style="waveloading" ath="40" atv="8" />
+		<hotspot name="building3" style="waveloading" ath="81" atv="11" />
+		<hotspot name="building4" style="waveloading" ath="-78" atv="10" />
+		<hotspot name="building5" style="waveloading" ath="-44" atv="7" />
+		<hotspot name="building6" style="waveloading" ath="-26" atv="6" />
 
-		<events onclick="show_coordinate();" /> 
+		<!-- <events onclick="show_coordinate();" />  -->
 
 	</scene>
 
