@@ -75,7 +75,7 @@
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
-		showlog();
+		<!-- showlog(); -->
 	</action>
 
 	<action name="show_coordinate" scope="local">
@@ -140,7 +140,7 @@
 		<hotspot name="screen1"
          url.html5="videoplayer_basic_source.js"
          url.flash="videoplayer.swf"
-         videourl="logovideo.mp4"
+         videourl="logo.mp4"
          posterurl="videoposter.jpg"
          ath="28.5" atv="-6"
          distorted="true"
@@ -161,12 +161,13 @@
          onvideopaused=""
          onvideocomplete=""
          onerror=""
+		 playsinline="false"
          />
 
 		 <hotspot name="screen2"
          url.html5="videoplayer_basic_source.js"
          url.flash="videoplayer.swf"
-         videourl="logovideo.mp4"
+         videourl="logo.mp4"
          posterurl="videoposter.jpg"
          ath="-29" atv="-6"
          distorted="true"
@@ -186,6 +187,7 @@
          onvideopaused=""
          onvideocomplete=""
          onerror=""
+		 playsinline="false"
          />
 
 		<!-- <events onclick="show_coordinate();" />  -->
