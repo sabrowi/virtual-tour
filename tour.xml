@@ -75,6 +75,7 @@
 		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
+		<!-- showlog(); -->
 	</action>
 
 	<action name="show_coordinate" scope="local">
@@ -110,24 +111,27 @@
 	</action >
 
 	<action name="play_video" scope="local">
-		caller.play();
+		caller.pause();
+		trace('ready ', caller.isvideoready);
+		<!-- caller.play(); -->
 	</action>
 
 	<style name="waveloading" url="loading.png" onloaded="do_crop_animation(100,100, 60);" />
 
 	<style name="logovideo"  
-		 url.html5="videoplayer_basic_source.js"
+		 url.html5="videoplayer.js"
          videourl="logo.mp4"
-		 posterurl="logoposter.jpg"
          distorted="true"
          scale="0.25"
 		 edge="center"
-         pausedonstart="false"
-         loop="true"
+         pausedonstart="true"
+         loop="false"
+		 muted="true"
          volume="1.0"
          directionalsound="true"
          range="90.0"
          rangefalloff="1.0"
+		 playsinline="true"
          outofrangevolume="0.0"
          onvideoready="play_video();"
 		/>
