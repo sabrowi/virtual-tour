@@ -82,8 +82,8 @@ var krpanoplugin = function()
 			// krpano.trace(2, "on mobile devices a touch is required to start playing the video!");
 			// krpano.call("showlog()");
 			
-			document.body.addEventListener("touchstart", play_via_touch_workaround, true);
-			document.body.addEventListener("touchend",   play_via_touch_workaround, true);	// iOS 9 allows playing only on touchend
+			// document.body.addEventListener("touchstart", play_via_touch_workaround, true);
+			// document.body.addEventListener("touchend",   play_via_touch_workaround, true);	// iOS 9 allows playing only on touchend
 		}
 	}
 
@@ -174,7 +174,7 @@ var krpanoplugin = function()
 
 	function interface_play()
 	{
-		video.play();
+		// video.play();
 	}
 
 

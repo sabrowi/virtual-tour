@@ -119,21 +119,21 @@
 	<style name="waveloading" url="loading.png" onloaded="do_crop_animation(100,100, 60);" />
 
 	<style name="logovideo"  
-		 url.html5="videoplayer.js"
+		 url.html5="videoplayer-v0.2.js"
          videourl="logo.mp4"
          distorted="true"
          scale="0.25"
 		 edge="center"
          pausedonstart="true"
          loop="false"
-		 muted="true"
+		 muted="false"
          volume="1.0"
          directionalsound="true"
          range="90.0"
          rangefalloff="1.0"
 		 playsinline="true"
+		 userinteractionworkarounds="false"
          outofrangevolume="0.0"
-         onvideoready="play_video();"
 		/>
 
 	<scene name="scene_building" title="building" onstart="" thumburl="panos/building.tiles/thumb.jpg" lat="" lng="" heading="">
