@@ -148,7 +148,7 @@
 
 		<hotspot name="main_building" style="waveloading" ath="-2" atv="-3" scale="0.5" />
 
-		<hotspot name="building1" style="waveloading" ath="25" atv="6" scale="0.5" />
+		<hotspot name="building1" style="waveloading" ath="25" atv="6" scale="0.5" onclick="js(modal('chatbox'));" />
 		<hotspot name="building2" style="waveloading" ath="40" atv="8" scale="0.5" />
 		<hotspot name="building3" style="waveloading" ath="81" atv="11" scale="0.5" />
 		<hotspot name="building4" style="waveloading" ath="-78" atv="10" scale="0.5" />
